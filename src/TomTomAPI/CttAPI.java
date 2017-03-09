@@ -31,7 +31,7 @@ public class CttAPI {
 
 	public static int writeRequest(TomTomRequest request) throws IOException{
 
-		String requestURL="https://api.tomtom.com/traffic/trafficstats/ctt/1?key=5ruu29zs3zj82ndu8jsfph3a";
+		String requestURL="https://api.tomtom.com/traffic/trafficstats/ctt/1?key=XXXX";
 
  		double dist=getRouteLength(request);
 		int jobID = -1;
@@ -205,7 +205,7 @@ public class CttAPI {
 
 		int length=-1;
 
-		String rountingURL="https://api.tomtom.com/routing/1/calculateRoute/<locations>/json?key=44gqwqjxvwuy5n4w7jyzasrd";
+		String rountingURL="https://api.tomtom.com/routing/1/calculateRoute/<locations>/json?key=XXXX";
 		String locations=Double.toString(request.getRoutes().get(0).getStart().getLatitude())+","
 				+Double.toString(request.getRoutes().get(0).getStart().getLongitude())+":"
 				+Double.toString(request.getRoutes().get(0).getEnd().getLatitude())+","
