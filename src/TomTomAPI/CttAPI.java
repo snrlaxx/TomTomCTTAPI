@@ -88,7 +88,7 @@ public class CttAPI {
 
 	public static Status getStatus(int jobID) throws IOException {
 
-		String statusURL="https://api.tomtom.com/traffic/trafficstats/status/1/"+jobID+"?key=5ruu29zs3zj82ndu8jsfph3a";
+		String statusURL="https://api.tomtom.com/traffic/trafficstats/status/1/"+jobID+"?key=XXXXXX";
 
 		URL status = new URL(statusURL);
 		HttpURLConnection statusCon = (HttpURLConnection)status.openConnection();
